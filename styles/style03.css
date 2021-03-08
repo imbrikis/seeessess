@@ -13,8 +13,6 @@
 
 .ball-1 {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
@@ -23,8 +21,6 @@
 
 .ball-2 {
   position: absolute;
-  bottom: 0;
-  right: 0;
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
