@@ -6,43 +6,68 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html {
   font-family: 'Poppins', sans-serif;
 }
 
-.container {
-  position: relative;
+.navbar {
+  position: fixed;
   margin: 0 auto;
-  width: 30rem;
+  width: 100vw;
   height: 5rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-h1 {
+.navbar-placeholder {
+  width: 100vw;
+  height: 5rem;
+}
+
+.svg-wrapper {
   position: relative;
-  color: orangered;
   text-align: center;
   display: inline-block;
+  width: 20rem;
 }
 
-.color-block {
-  position: absolute;
-  right: 0;
-  display: inline-block;
-  width: 15rem;
-  height: 5rem;
-  background-color: orangered;
-  transition: all 1s;
-  z-index: -1;
+.svg {
+  width: 100%;
 }
 
-.move-left {
-  right: 15rem;
-  transition: all 1s;
+.svg path {
+  fill: black;
 }
 
-.btn {
-  display: block;
-  margin: 1rem auto 0 auto;
+.one,
+.two,
+.three {
+  width: 100vw;
+  height: 30rem;
+}
+
+.four {
+  width: 100vw;
+  height: 60rem;
+}
+
+.one {
+  background-color: palegreen;
+}
+
+.two {
+  background-color: rgb(177, 188, 248);
+}
+
+.three {
+  background-color: rgb(253, 184, 224);
+}
+
+.four {
+  background-color: white;
 }
