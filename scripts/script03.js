@@ -1,4 +1,4 @@
-// A demonstration of collision detection
+// A demonstration of collision detection : INCOMPLETE
 
 // --- VARIABLES --- //
 const ballA = document.querySelector('.ball-1')

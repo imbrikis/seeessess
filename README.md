@@ -37,3 +37,12 @@ What I learned:
 
 - I'm attempting to understand collision detection
 - My design will require me to brush up on vectors and parabolic functions
+
+---
+
+### Page 04: Text Contrast Animation
+
+- I've seen nav items in a sticky navbar where the color property changes as the page scrolls down
+- I like the idea of changing the color property of text as it passes through an image or other item, to produce a strong color contrast
+- This effect will need to be automatically handled through some means of the underlying color and the color of the overlaying text
+- I'm not sure if this can be changed on a pixel-by-pixel basis
