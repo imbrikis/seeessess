@@ -41,7 +41,7 @@ html {
 }
 
 .svg path {
-  fill: white;
+  fill: rgb(40, 192, 215);
 }
 
 .one,
@@ -61,7 +61,8 @@ html {
 }
 
 .two {
-  background-color: rgb(177, 188, 248);
+  /* background-color: rgb(177, 188, 248); */
+  background-color: white;
 }
 
 .three {
