@@ -197,6 +197,50 @@ main button {
 /* ----------------- */
 /* - NEWSLETTER - */
 /* ----------------- */
+.newsletter {
+  text-align: center;
+}
+
+.newsletter h3 {
+  font-size: 2rem;
+}
+
+.newsletter h4 {
+  font-size: 1.6rem;
+  padding: 1.9rem 7rem;
+}
+
+.newsletter-form {
+  margin: 0 auto;
+  width: 28rem;
+  padding: 1.2rem 1rem;
+  background: #c4c4c4;
+  box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+.newsletter-form input,
+.newsletter-form button {
+  text-transform: uppercase;
+  height: 3.1rem;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #868686;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+.newsletter-form input {
+  margin-bottom: 1.2rem;
+  padding-left: 1.2rem;
+}
+
+.newsletter-form button {
+}
+
+.newsletter-img {
+  margin: 3.5rem auto 3.2rem auto;
+}
 
 /* ----------------- */
 /* - FOOTER - */
