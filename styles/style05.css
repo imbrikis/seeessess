@@ -22,6 +22,15 @@ body {
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
 /* ----------------- */
 /* - NAV - */
 /* ----------------- */
@@ -70,13 +79,117 @@ nav {
 /* - MAIN - */
 /* ----------------- */
 main {
+  background-color: #000;
   background-image: url('../assets/images/kittens.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
+  padding-bottom: 1.9rem;
 }
 
 main h1 {
   text-transform: capitalize;
+  font-size: 4.8rem;
+  padding: 3.7rem 0 3rem 1.5rem;
 }
 
 main p {
+  font-size: 2rem;
+  padding-left: 14.5rem;
+  padding-right: 1.1rem;
+  margin-bottom: 3.6rem;
+}
+
+main button {
+  display: block;
+  margin: 0 auto;
+  width: 10.5rem;
+  height: 3.5rem;
+  border: 1px solid #fff;
+  border-radius: 0.3rem;
+  background-color: rgba(0, 0, 0, 0.46);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+/* ----------------- */
+/* - SECTION CAROUSEL - */
+/* ----------------- */
+.section-carousel {
+  padding: 1.3rem 0 1.5rem 0;
+}
+
+.section-carousel h3 {
+  font-size: 2rem;
+  text-decoration-line: underline;
+  text-align: center;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1.3rem 0 2.3rem 0;
+}
+
+.icon-arrow-left::before {
+  content: '<';
+  font-size: 2.4rem;
+}
+
+.icon-arrow-right::before {
+  content: '>';
+  font-size: 2.4rem;
+}
+
+.carousel-slide {
+  display: inline-block;
+  width: 22rem;
+  height: 18rem;
+  background: #c4c4c4;
+  box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+.carousel-nav-icons {
+  margin: 0 auto;
+  display: flex;
+  width: 8.8rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.carousel-nav-icon::before {
+  content: '•';
+  color: #777777;
+  font-size: 4rem;
+}
+
+.carousel-nav-icon-active::before {
+  color: #111;
+  font-size: 6rem;
+}
+
+/* ----------------- */
+/* - SALES - */
+/* ----------------- */
+.section-sales {
+  margin-bottom: 6.6rem;
+}
+
+/* ----------------- */
+/* - TRENDS - */
+/* ----------------- */
+.section-trends {
+  margin-bottom: 6.6rem;
+}
+
+/* ----------------- */
+/* - NEWS - */
+/* ----------------- */
+.section-news {
+  margin-bottom: 6.6rem;
 }
