@@ -46,3 +46,11 @@ What I learned:
 - I like the idea of changing the color property of text as it passes through an image or other item, to produce a strong color contrast
 - This effect will need to be automatically handled through some means of the underlying color and the color of the overlaying text
 - I'm not sure if this can be changed on a pixel-by-pixel basis
+
+---
+
+### Page 05: Responsive Design
+
+- This project involves making a responsive webpage
+- I've ran into several issues with various elements and their layouts in a responsive container
+- This project should help me learn how to work with various elements and layouts
