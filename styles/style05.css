@@ -193,3 +193,24 @@ main button {
 .section-news {
   margin-bottom: 6.6rem;
 }
+
+/* ----------------- */
+/* - NEWSLETTER - */
+/* ----------------- */
+
+/* ----------------- */
+/* - FOOTER - */
+/* ----------------- */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4.8rem;
+  font-size: 1.2rem;
+  background: #9ca3e7;
+}
+
+footer span {
+  text-transform: uppercase;
+  font-weight: bold;
+}
