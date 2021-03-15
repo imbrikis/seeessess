@@ -42,6 +42,7 @@ nav {
   padding: 0 1.9rem 0 3rem;
   height: 4.8rem;
 }
+
 .logo {
   padding: 0.7rem 2.6rem;
   background-color: #c4c4c4;
@@ -53,7 +54,6 @@ nav {
   height: 3.6rem;
   padding: 0.9rem 0.4rem;
   position: relative;
-  /* background-color: rgb(221, 255, 188); */
 }
 
 .disabled {
@@ -257,4 +257,43 @@ footer {
 footer span {
   text-transform: uppercase;
   font-weight: bold;
+}
+
+/* ----------------- */
+/* - MEDIA QUERIES - */
+/* ----------------- */
+@media (min-width: 600px) {
+  /* TABLET */
+  nav {
+    padding: 0 1.9rem 0 5rem;
+  }
+
+  main h1 {
+    padding: 3.7rem 0 3rem 5rem;
+  }
+
+  main {
+    padding-bottom: 3rem;
+  }
+
+  .carousel-slide {
+    width: 70vw;
+    height: 40vh;
+    background: #c4c4c4;
+    box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+  }
+
+  .newsletter h3 {
+    font-size: 3rem;
+  }
+
+  .newsletter-form {
+    width: 55vw;
+    padding: 2rem 2rem;
+  }
+
+  .newsletter-form input {
+    margin-bottom: 2rem;
+  }
 }

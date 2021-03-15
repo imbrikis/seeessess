@@ -5,8 +5,8 @@ const animationStep = 0.5 // amount to increment animation, screen height (100) 
 const lineFadein = 4 // where animation fades in
 const lineFadeOut = 8 // where animation fades out
 // --- animation colors --- //
-// const lineColor = '244,25,209,1' // magenta
-const lineColor = '29,244,25,1' // electric green
+const lineColor = '244,25,209,1' // magenta
+// const lineColor = '29,244,25,1' // electric green
 
 // declare variable for animation interval
 let intervalId
