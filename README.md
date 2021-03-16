@@ -59,5 +59,10 @@ What I learned:
 
 ### Page 06: Hamburger Menu!!!
 
-- This project involves making a hamburger menu navigation icon
-- The site must be responsive (hide the hamburger after a certain breakpoint)
+- This project involved making a hamburger menu navigation icon
+- The site is responsive (hides the hamburger after a 900px breakpoint)
+
+What I learned:
+
+- Hiding and adding classes with JavaScript
+- More specifically, creating various classes that will style the various nav elements during certain events (like when the hamburger icon is active)
