@@ -62,17 +62,19 @@ nav {
 
 .nav-menu-icon {
   position: absolute;
-  width: 2.7rem;
+  width: 100%;
   height: 0.3rem;
   background-color: #dadada;
 }
 
 .nav-menu-icon:nth-child(2) {
-  top: 1.7rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .nav-menu-icon:nth-child(3) {
-  top: 2.5rem;
+  top: 80%;
+  transform: translateY(-50%);
 }
 
 /* ----------------- */
@@ -295,5 +297,30 @@ footer span {
 
   .newsletter-form input {
     margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 600px) {
+  nav {
+    height: 7.8rem;
+  }
+
+  .logo {
+    width: 15.4rem;
+    height: 5rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-button {
+    width: 6rem;
+    height: 6rem;
+    right: 3rem;
+  }
+
+  .nav-menu-icon {
+    height: 0.5rem;
   }
 }

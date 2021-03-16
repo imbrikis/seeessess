@@ -54,3 +54,10 @@ What I learned:
 - This project involves making a responsive webpage
 - I've ran into several issues with various elements and their layouts in a responsive container
 - This project should help me learn how to work with various elements and layouts
+
+---
+
+### Page 06: Hamburger Menu!!!
+
+- This project involves making a hamburger menu navigation icon
+- The site must be responsive (hide the hamburger after a certain breakpoint)
