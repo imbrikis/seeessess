@@ -73,4 +73,10 @@ What I learned:
 - This app displays a square pane containing a single image presented in a 2x2 matrix
 - Using a set of up, down, left, and right arrows adjacent to each of the images the user may flip them vertically or horizontally
 
+What I learned:
+
+- Lots of CSS grid and flexbox and how to layout elements
+- Manipulation of the DOM: keeping track of the transform property for all img elements by creating a local 'state' array
+- CSS image layout
+
 ---
