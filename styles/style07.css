@@ -30,3 +30,45 @@ h5,
 h6 {
   font-weight: normal;
 }
+
+/* ----------------- */
+/* - MAIN STYLES - */
+/* ----------------- */
+
+h1 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  margin: 5rem auto 0 auto;
+  width: 70rem;
+  height: 70rem;
+  grid-template-columns: 1fr 4fr 4fr 1fr;
+  grid-template-rows: 1fr 4fr 4fr 1fr;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+div:nth-child(1) {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+div:nth-child(2) {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+div:nth-child(3) {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+div:nth-child(4) {
+  grid-area: 3 / 3 / 4 / 4;
+}
