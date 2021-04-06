@@ -43,32 +43,99 @@ form {
   text-align: center;
 }
 
+h1,
+form {
+  width: 100%;
+}
+
 .container {
   display: grid;
   margin: 5rem auto 0 auto;
-  width: 70rem;
-  height: 70rem;
-  grid-template-columns: 1fr 4fr 4fr 1fr;
-  grid-template-rows: 1fr 4fr 4fr 1fr;
+  width: 100vw;
+  height: 80vh;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4, auto);
+}
+
+.image,
+.btn-x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  height: 100%;
 }
 
-div:nth-child(1) {
+.image-a {
   grid-area: 2 / 2 / 3 / 3;
 }
 
-div:nth-child(2) {
+.image-b {
   grid-area: 2 / 3 / 3 / 4;
 }
 
-div:nth-child(3) {
+.image-c {
   grid-area: 3 / 2 / 4 / 3;
 }
 
-div:nth-child(4) {
+.image-d {
   grid-area: 3 / 3 / 4 / 4;
+}
+
+.image-a-btn-y {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.image-a-btn-x {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.image-b-btn-y {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.image-b-btn-x {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.image-c-btn-y {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.image-c-btn-x {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.image-d-btn-y {
+  grid-area: 3 / 4 / 4 / 5;
+}
+
+.image-d-btn-x {
+  grid-area: 4 / 3 / 5 / 4;
+}
+
+.flipY {
+  transform: rotate(90deg);
+}
+
+.flipY {
+}
+
+.image-b-btn-y,
+.image-d-btn-y {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.image-a-btn-y,
+.image-c-btn-y {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
 }
