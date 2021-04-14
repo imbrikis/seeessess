@@ -1,42 +1,29 @@
 const wrapper = document.querySelector('.wrapper')
-let elems = document.querySelectorAll('.box-container')
 const singleBoxContainer = document.querySelector('.box-container')
+const boxContainerWidth = singleBoxContainer.clientWidth
+let elems = document.querySelectorAll('.box-container')
 
 window.onload = () => {
-  wrapper.scroll(singleBoxContainer.clientWidth, 0)
+  wrapper.scroll(boxContainerWidth, 0)
 }
 
 const clone = singleBoxContainer.cloneNode(true)
 
-// elems.addEventListener('click', () => {
-//   console.log('clicked')
-//   wrapper.appendChild(clone)
-//   wrapper.prepend(clone)
-// })
-
 let options = {
   root: wrapper,
   rootMargin: '0px',
-  threshold: [0.25, 0.75],
+  threshold: [0.25, 0.75], // this can be altered if need be
 }
 
+// calls the handleScroll function if the middle scroll element is leaving the observed area
 const callback = (entries, observer) => {
   entries.forEach((entry) => {
-    console.log(entry)
     if (!entry.isIntersecting && entry.boundingClientRect.left > 600) {
-      console.log('move the group at elem[2] to the beginning of the array')
-      fuckery(elems[2])
+      handleScroll(elems[2])
     }
-    // attachObservers()
-    // if (entry.isIntersecting && entry.boundingClientRect.left > 600) {
-    //   console.log('move the group at elem[0] to the beginning of the array')
-    // }
-    // if (!entry.isIntersecting && entry.boundingClientRect < 600) {
-    //   console.log('move the group at elem[0] to the end of the array')
-    // }
-    // if (entry.isIntersecting && entry.boundingClientRect < 600) {
-    //   console.log('move the group at elem[2] to the end of the array')
-    // }
+    if (!entry.isIntersecting && entry.boundingClientRect.left < 600) {
+      handleScroll(elems[0])
+    }
   })
 }
 
@@ -44,17 +31,28 @@ let observer = new IntersectionObserver(callback, options)
 
 const attachObservers = () => {
   observer.observe(elems[1])
-  setInterval(() => console.log(wrapper.scrollLeft), 250)
 }
 
 attachObservers()
 
-const fuckery = (element) => {
-  const oldScrollWidth = wrapper.scrollWidth
-  wrapper.prepend(element)
-  wrapper.scrollLeft = oldScrollWidth - singleBoxContainer.clientWidth * 1.25
+const handleScroll = (element) => {
+  // set the x coordinate multiplier of where the scrollbar
+  // will reposition after the scroll elements are altered
+  let scrollMultiplier = element === elems[2] ? 1.25 : 2.25
 
+  // if element 2 is passed into this current function
+  // you will move the element to the beginning of the scroll elements
+  // else move it to the end
+  element === elems[2] ? wrapper.prepend(element) : wrapper.append(element)
+
+  // reposition the scroll position to the middle of the scroll elements
+  wrapper.scrollLeft =
+    wrapper.scrollWidth - boxContainerWidth * scrollMultiplier
+
+  // reassign the variable that points to the scroll elements
+  // because the scroll elements have been altered
   elems = document.querySelectorAll('.box-container')
+  // rebinding the observer to the middle element in the scroll field
   observer.unobserve(elems[1])
   observer.observe(elems[1])
 }
