@@ -15,7 +15,7 @@
   width: 16rem;
   height: 8rem;
   background: #eee;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   overflow-x: auto;
   white-space: nowrap;
   scrollbar-width: none;
@@ -26,27 +26,29 @@
   display: none;
 }
 
-#box_a {
+#box-a {
   background: #d19;
 }
 
-#box_b {
+#box-b {
   background: #44d3ff;
 }
 
-#box_c {
+#box-c {
   background: #80ff80;
 }
 
-#box_d {
+#box-d {
   background: #ff9900;
 }
 
-.boxes {
+.box {
   display: inline-block;
+  margin-right: -0.25rem;
   width: 8rem;
   height: 8rem;
 }
 
-.all-the-boxes {
+.box-container {
+  display: inline-block;
 }
