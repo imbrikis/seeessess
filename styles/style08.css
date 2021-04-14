@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 16rem;
+  height: 8rem;
+  background: #eee;
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+#box_a {
+  background: #d19;
+}
+
+#box_b {
+  background: #44d3ff;
+}
+
+#box_c {
+  background: #80ff80;
+}
+
+#box_d {
+  background: #ff9900;
+}
+
+.boxes {
+  display: inline-block;
+  width: 8rem;
+  height: 8rem;
+}
+
+.all-the-boxes {
+}

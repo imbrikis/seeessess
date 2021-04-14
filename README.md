@@ -76,7 +76,20 @@ What I learned:
 What I learned:
 
 - Lots of CSS grid and flexbox and how to layout elements
-- Manipulation of the DOM: keeping track of the transform property for all img elements by creating a local 'state' array
+- Manipulation of the DOM: keeping track of the transform property for all img elements by creating a local 'state' array, all with vanilla JS
 - CSS image layout
+
+---
+
+### Page 08: Infinite Horizontal Scroll
+
+- A container div acts as a viewport for enclosed divs
+- The enclosed divs overflow the container horizontally (inline-block elements) and a scrollbar appears
+- The idea is to hide the scroll bar and continuously scroll the items left or right
+- This will only be needed on mobile, so hiding the scrollbar won't be an issue (not will the issue of the scrollbar 'jumping')
+
+What I learned:
+
+- Dun learnin' as we speak
 
 ---
