@@ -18,10 +18,11 @@ let options = {
 // calls the handleScroll function if the middle scroll element is leaving the observed area
 const callback = (entries, observer) => {
   entries.forEach((entry) => {
-    if (!entry.isIntersecting && entry.boundingClientRect.left > 600) {
+    console.log(entry)
+    if (!entry.isIntersecting && entry.boundingClientRect.left > 20) {
       handleScroll(elems[2])
     }
-    if (!entry.isIntersecting && entry.boundingClientRect.left < 600) {
+    if (!entry.isIntersecting && entry.boundingClientRect.left < 20) {
       handleScroll(elems[0])
     }
   })
