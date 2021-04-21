@@ -90,6 +90,6 @@ What I learned:
 
 What I learned:
 
-- Dun learnin' as we speak
+- How to use the Intersection Observer API and how to use observers to trigger various events
 
 ---
