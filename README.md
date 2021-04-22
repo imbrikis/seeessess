@@ -97,3 +97,7 @@ What I learned:
 ### Page 09: Click the box, make it move
 
 - A box that when clicked, moves. Amazing ;)
+
+What I learned:
+
+- I just wanted to make a box that moved and turned into a circle when clicked. Nothing was really learned, but it was fun

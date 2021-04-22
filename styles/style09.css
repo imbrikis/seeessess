@@ -17,4 +17,23 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  background: blue;
+  top: 50%;
+  left: 50%;
+  border-radius: 0%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+
+.moveUp {
+  transform: translate(-50%, -30rem);
+  border-radius: 50%;
+  transition: all 0.5s;
 }
