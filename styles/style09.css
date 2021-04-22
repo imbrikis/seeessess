@@ -10,6 +10,7 @@ html {
 
 body {
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .container {
@@ -19,28 +20,29 @@ body {
   height: 100vh;
   position: relative;
   background-color: black;
-  transition: all 0.5s;
+  transition: background-color 1s;
 }
 
 .colorShift {
   background-color: white;
-  transition: all 0.5s;
+  transition: background-color 1s;
 }
 
 .box {
   position: absolute;
-  width: 10rem;
-  height: 10rem;
-  background: blue;
+  width: 1rem;
+  height: 1rem;
+  background: rgb(32, 221, 255);
   top: 50%;
   left: 50%;
   border-radius: 0%;
   transform: translate(-50%, -50%);
-  transition: all 0.5s;
+  transition: all 1s;
 }
 
 .moveUp {
-  transform: translate(-50%, -300%);
+  width: 200vh;
+  height: 200vh;
   border-radius: 50%;
-  transition: all 0.5s;
+  transition: all 1s;
 }
