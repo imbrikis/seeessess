@@ -93,3 +93,7 @@ What I learned:
 - How to use the Intersection Observer API and how to use observers to trigger various events
 
 ---
+
+### Page 09: Click the box, make it move
+
+- A box that when clicked, moves. Amazing ;)
