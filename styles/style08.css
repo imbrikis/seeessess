@@ -20,7 +20,7 @@ body {
 }
 
 .wrapper {
-  width: 32rem;
+  width: 100%;
   height: 16rem;
   background: #eee;
   /* overflow-y: hidden; */
