@@ -101,3 +101,9 @@ What I learned:
 What I learned:
 
 - I just wanted to make a box that moved and turned into a circle when clicked. Nothing was really learned, but it was fun
+
+---
+
+### Page 10: Side-scrolling Nav w/dropdown
+
+- A side-scrolling navbar with select elements. The elements should infinitely scroll horizontally
