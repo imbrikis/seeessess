@@ -2,49 +2,57 @@ const leftArrow = document.querySelector('.arrow-left')
 const rightArrow = document.querySelector('.arrow-right')
 const dropdownWrapper = document.querySelector('.dropdown-wrapper')
 const dropdownArray = document.querySelectorAll('.select-container')
+let dropdownArrayCopy = []
 
 const ddWrapperWidth = dropdownWrapper.getBoundingClientRect()
 
-let ddItemPosition = -300
-dropdownArray.forEach((item) => {
-  item.testProp = ddItemPosition
-  item.style.left = `${item.testProp}%`
-  ddItemPosition += 100
+// initializes the program
+const init = () => {
+  let ddItemPosition = (-dropdownArray.length / 3) * 100
+  console.log(ddItemPosition)
+
+  dropdownArrayCopy = Array.prototype.slice.call(dropdownArray)
+
+  dropdownArrayCopy.forEach((item) => {
+    item.leftPos = ddItemPosition
+    item.style.left = `${item.leftPos}%`
+    ddItemPosition += 100
+  })
+  dropdownWrapper.replaceChildren(...dropdownArray)
+}
+init()
+
+const relocateItem = (arr, position) => {
+  const tempSlice =
+    position === 'left' ? arr.splice(0, 1) : arr.splice(arr.length - 1, 1)
+
+  console.log(tempSlice)
+
+  position === 'left'
+    ? ((tempSlice[0].leftPos = (dropdownArray.length / 2) * 100 + 100),
+      (tempSlice[0].style.left = `${tempSlice[0].leftPos}%`))
+    : ((tempSlice[0].leftPos = -(dropdownArray.length / 3) * 100),
+      (tempSlice[0].style.left = `${tempSlice[0].leftPos}%`))
+
+  position === 'left' ? arr.push(...tempSlice) : arr.unshift(...tempSlice)
+  return arr
+}
+
+const setDropdownPosition = (arr, position) => {
+  arr.forEach((item) => {
+    position === 'left' ? (item.leftPos -= 100) : (item.leftPos += 100)
+    item.style.left = `${item.leftPos}%`
+  })
+
+  const mutatedArr =
+    position === 'left' ? relocateItem(arr, 'left') : relocateItem(arr, 'right')
+  dropdownWrapper.replaceChildren(...mutatedArr)
+}
+
+leftArrow.addEventListener('click', () => {
+  setDropdownPosition(dropdownArrayCopy, 'left')
 })
 
-// dropdownArray.forEach((item) => console.log(item.style.left))
-
-leftArrow.addEventListener(
-  'click',
-  () =>
-    // move this function out of this event listener
-    dropdownArray.forEach((item) => {
-      item.testProp -= 100
-      item.style.left = `${item.testProp}%`
-    })
-
-  // move this function out of this event listener
-)
-
-rightArrow.addEventListener('click', () =>
-  dropdownArray.forEach((item) => {
-    item.testProp += 100
-    item.style.left = `${item.testProp}%`
-  })
-)
-
-// console.log((dropdownArray[2].style.left = '0%'))
-console.log(dropdownWrapper.getBoundingClientRect()) // container width
-
-/*
-
-
-look at dropdown wrapper width (will be giant to include all dropdowns)
-on click event, change left property of all items
-  - if wrapper was moved left, grab first item (left item) and move to the very end (right)
-  - if wrapper was moved right, grab last item (right item) and move to the very start (left)
-
-first:
-just move all dd items on click
-
-*/
+rightArrow.addEventListener('click', () => {
+  setDropdownPosition(dropdownArrayCopy, 'right')
+})

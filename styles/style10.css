@@ -71,7 +71,7 @@ body {
   transition: all 1s;
 }
 
-.select-container:nth-child(1) {
+/* .select-container:nth-child(1) {
   left: -300%;
 }
 
@@ -105,4 +105,4 @@ body {
 
 .select-container:nth-child(9) {
   left: 500%;
-}
+} */
