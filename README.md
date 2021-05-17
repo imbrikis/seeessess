@@ -106,4 +106,4 @@ What I learned:
 
 ### Page 10: Side-scrolling Nav w/dropdown
 
-- A side-scrolling navbar with select elements. The elements should infinitely scroll horizontally
+- A side-scrolling navbar with select elements. The elements should infinitely scroll horizontally. A work in progress
