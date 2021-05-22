@@ -26,8 +26,6 @@ const relocateItem = (arr, position) => {
   const tempSlice =
     position === 'left' ? arr.splice(0, 1) : arr.splice(arr.length - 1, 1)
 
-  console.log(tempSlice)
-
   position === 'left'
     ? ((tempSlice[0].leftPos = (dropdownArray.length / 2) * 100 + 100),
       (tempSlice[0].style.left = `${tempSlice[0].leftPos}%`))
