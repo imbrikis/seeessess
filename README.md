@@ -108,6 +108,6 @@ What I learned:
 
 - A side-scrolling navbar with select elements. The elements should infinitely scroll horizontally. A work in progress
 
-### Page 11: Not sure yet
+### Page 11: Gifter Layout
 
-- Not sure what this is just yet
+- A layout for a project I'm working on 
