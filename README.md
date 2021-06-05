@@ -108,6 +108,6 @@ What I learned:
 
 - A side-scrolling navbar with select elements. The elements should infinitely scroll horizontally. A work in progress
 
-### Page 11: Not sure yet
+### Page 11: async example
 
-- Not sure what this is just yet
+- Learning about async / await
