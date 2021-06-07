@@ -3,13 +3,16 @@ const ctx = canvas.getContext('2d')
 
 let widthP, heightP, animFrame
 
+function fadeOut() {
+  var r = 0.1 + Math.random() * 0.1
+  ctx.fillStyle = `rgba(0, 0, 0, ${r})`
+  ctx.fillRect(0, 0, canvas.width, canvas.height)
+  setTimeout(fadeOut, 100)
+}
+
 // draw stuff here
 const draw = () => {
-  ctx.fillStyle = 'rgba(0, 0, 0, 0.05)'
-  ctx.fillRect(0, 0, widthP * 1000, heightP * 1000)
-  ctx.fillStyle = 'rgba(255, 255, 255, 1)'
-
-  const radius = Math.floor(Math.random() * 100) + 1
+  const radius = Math.floor(Math.random() * 2) + 1
 
   ctx.beginPath()
   ctx.arc(
@@ -19,13 +22,23 @@ const draw = () => {
     0,
     Math.PI * 2
   )
+  ctx.fillStyle = 'white'
   ctx.fill()
   console.log('hi')
-  animFrame = window.requestAnimationFrame(draw)
+  animFrame = requestAnimationFrame(draw)
 }
 
+const requestAnimationFrame =
+  window.requestAnimationFrame ||
+  window.mozRequestAnimationFrame ||
+  window.webkitRequestAnimationFrame ||
+  window.msRequestAnimationFrame
+
+const cancelAnimationFrame =
+  window.cancelAnimationFrame || window.mozCancelAnimationFrame
+
 const resizeCanvas = () => {
-  window.cancelAnimationFrame(animFrame)
+  cancelAnimationFrame(animFrame)
   if (
     window.innerHeight > window.innerWidth ||
     window.innerHeight === window.innerWidth
@@ -40,9 +53,10 @@ const resizeCanvas = () => {
   widthP = canvas.width / 1000
   heightP = canvas.height / 1000
 
-  animFrame = window.requestAnimationFrame(draw)
+  animFrame = requestAnimationFrame(draw)
 }
 
 window.addEventListener('resize', resizeCanvas)
 
 resizeCanvas()
+fadeOut()
