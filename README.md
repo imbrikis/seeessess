@@ -111,3 +111,7 @@ What I learned:
 ### Page 11: async example
 
 - Learning about async / await
+
+### Page 12: Canvas Template
+
+- A template for HTML5 canvas messarounds
