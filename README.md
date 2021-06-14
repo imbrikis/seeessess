@@ -115,3 +115,7 @@ What I learned:
 ### Page 12: Canvas Template
 
 - A template for HTML5 canvas messarounds
+
+### Page 13: Canvas - Fun Stuff
+
+- Not sure what this is just yet
