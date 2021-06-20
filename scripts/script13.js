@@ -12,7 +12,10 @@ function fadeOut() {
 
 // draw stuff here
 const draw = () => {
-  const radius = Math.floor(Math.random() * 2) + 1
+  ctx.fillStyle = 'white'
+  ctx.fillRect(500, 500, 5, 5)
+
+  animFrame = requestAnimationFrame(draw)
 }
 
 const requestAnimationFrame =

@@ -119,3 +119,8 @@ What I learned:
 ### Page 13: Canvas - Fun Stuff
 
 - Not sure what this is just yet
+
+### Page 14: 3D Cube
+
+- I'm designing a new portfolio website that will be laid out with a cube as the navigation
+- This project will demonstrate the CSS and JS needed to provide 3D rendering and navigation
