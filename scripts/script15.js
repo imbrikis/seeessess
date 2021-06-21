@@ -2,14 +2,25 @@ const selectValue = document.querySelector('select')
 const container = document.querySelector('.container')
 
 const setCookie = (val) => {
-  document.cookie = `color=${val};max-age=60;`
+  //COOKIE
+  // document.cookie = `color=${val};max-age=60;`
+
+  // LOCAL STORAGE
+  localStorage.setItem('color', val)
 }
 
 window.onload = () => {
-  if (document.cookie.length !== 0) {
-    let item = document.cookie.split('=')[1]
-    setColor(item)
-  }
+  console.log(localStorage.getItem('color'))
+
+  // COOKIE
+  // if (document.cookie.length !== 0) {
+  //   let item = document.cookie.split('=')[1]
+  //   setColor(item)
+  // }
+
+  // LOCAL STORAGE
+  let item = localStorage.getItem('color')
+  item !== null && setColor(item)
 }
 
 const setColor = (val) => {
