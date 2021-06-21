@@ -1,11 +1,24 @@
-function toAccounting(n) {
-  if (n < 0) {
-    return `(${Math.abs(n)})`
-  } else if (n >= 0) {
-    return n
-  }
+const convertToAccountingFormat = (num) => {
+  // ADVANCED
+  // if (typeof num === 'number') {
+  //   return num < 0 ? `(${Math.abs(num)})` : num.toString()
+  // } else {
+  //   return undefined
+  // }
+
+  // MINE
+  // if (num == null) return
+  // return num < 0 ? `(${Math.abs(num)})` : num.toString()
+
+  // PRO
+  if (num == null) return
+  if (num < 0) return `(${Math.abs(num)})`
+  return num.toString()
 }
 
-console.log(toAccounting(0))
-console.log(toAccounting(10))
-console.log(toAccounting(-5))
+// TEST CASES
+console.log(convertToAccountingFormat(0))
+console.log(convertToAccountingFormat(10))
+console.log(convertToAccountingFormat(-5))
+console.log(convertToAccountingFormat(undefined))
+console.log(convertToAccountingFormat('things'))
