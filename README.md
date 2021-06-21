@@ -128,3 +128,13 @@ What I learned:
 ### Page 15: Cookies
 
 - My first dive into understanding how to implement cookies with vanilla JS
+
+What I learned:
+
+- Cookies should be used when you need to communicate something from the client back to the server
+- Otherwise, you can use localStorage
+- LocalStorage is much easier to use
+
+### Page 16: Noob vs Pro code - follow along
+
+- A follow-along to https://www.youtube.com/watch?v=g2nMKzhkvxw
