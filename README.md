@@ -124,3 +124,7 @@ What I learned:
 
 - I'm designing a new portfolio website that will be laid out with a cube as the navigation
 - This project will demonstrate the CSS and JS needed to provide 3D rendering and navigation
+
+### Page 15: Cookies
+
+- My first dive into understanding how to implement cookies with vanilla JS
