@@ -138,3 +138,12 @@ What I learned:
 ### Page 16: Noob vs Pro code - follow along
 
 - A follow-along to https://www.youtube.com/watch?v=g2nMKzhkvxw
+
+What I learned:
+
+- How to properly destructure function parameters
+- Refactoring poorly written code
+
+### Page 17: Promises
+
+- Learning promises and Async/await (for the 10nth time...)
