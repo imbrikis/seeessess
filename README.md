@@ -147,3 +147,8 @@ What I learned:
 ### Page 17: Promises
 
 - Learning promises and Async/await (for the 10nth time...)
+
+### Page 18: Mobile layout resizing issues
+
+- I've noticed that windows resize on some mobile browsers (the presence of the top url bar causes this)
+- This project attempts to find out if I can implement a workaround
