@@ -146,9 +146,14 @@ What I learned:
 
 ### Page 17: Promises
 
-- Learning promises and Async/await (for the 10nth time...)
+- Learning promises and Async/await (for the tenth time...)
 
 ### Page 18: Mobile layout resizing issues
 
 - I've noticed that windows resize on some mobile browsers (the presence of the top url bar causes this)
 - This project attempts to find out if I can implement a workaround
+
+### Page 19: Loading Icon
+
+- A mobile loading icon
+- This icon has 'fins' that circle it when it's ready to be clicked for form submission, etc

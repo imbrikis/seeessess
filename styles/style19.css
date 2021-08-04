@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+}
+
+.flex-center-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.icon-container {
+  width: 8rem;
+  height: 8rem;
+  background-color: rgba(15, 15, 15, 0.2);
+  z-index: 10;
+}
+
+.orb {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(202, 202, 202);
+  border-radius: 50%;
+}
+
+.flash {
+  animation: flash 0.2s linear infinite;
+}
+
+.fins-orbit-outer {
+  width: 8rem;
+  height: 8rem;
+  transition: all 0.2s;
+}
+
+.fins-orbit-2 {
+  transform: rotate(120deg);
+}
+
+.fins-orbit-3 {
+  transform: rotate(240deg);
+}
+
+.fins-orbit-wrapper-1,
+.fins-orbit-wrapper-2,
+.fins-orbit-wrapper-3 {
+  width: 100%;
+  height: 100%;
+  animation: spin-right 10s linear infinite;
+}
+
+.fin1,
+.fin2,
+.fin3 {
+  width: 2.2rem;
+  height: 4px;
+  top: 0;
+  background-color: rgba(180, 0, 0, 1);
+  transition: top 1.5s, background-color 0.5s;
+}
+
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes flash {
+  0% {
+    background-color: rgba(202, 202, 202, 1);
+  }
+  100% {
+    background-color: rgba(180, 0, 0, 1);
+  }
+}
