@@ -1,8 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/* 
+CORRECT THIS - main page styling - create separate classes
 
 ul {
   margin: 1rem auto 0 auto;
@@ -31,4 +45,18 @@ ul li:hover {
   transition: all 0.3s;
   color: rgb(43, 43, 43);
   font-size: 1.25rem;
+} */
+
+/* ################## */
+/* COMMON CLASSES ### */
+/* ################## */
+
+.flex-center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
 }

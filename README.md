@@ -157,3 +157,16 @@ What I learned:
 
 - A mobile loading icon
 - This icon has 'fins' that circle it when it's ready to be clicked for form submission, etc
+
+What I learned:
+
+- How to use multiple divs to place items out evenly in a circular area (you don't necessarily need to use separate divs, but I had to in order to run animations on them)
+
+### Page 20: Expanding items
+
+- Trying to understand how padding may or may not work in flexbox
+- Items in a containing div must have an initial width, then shrink depending on neighboring sibling elements
+
+What I learned:
+
+- You must use margin on the child text itself instead of padding on the parent as flexbox does not account for padding when used in this manner

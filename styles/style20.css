@@ -1,0 +1,47 @@
+@import 'main.css';
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.container {
+  height: 60px;
+  width: 700px;
+  outline: 2px solid blue;
+  display: flex;
+}
+
+.btn {
+  margin-top: 2rem;
+  font-size: 6rem;
+}
+
+.item {
+  height: 100%;
+  background: lightblue;
+  border: 2px solid orange;
+
+  width: 10rem;
+  min-width: 2rem;
+}
+
+.item:not(:last-child) {
+  margin-right: 2px;
+}
+
+.text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0 12px;
+}
+
+.hide {
+  display: none;
+}
