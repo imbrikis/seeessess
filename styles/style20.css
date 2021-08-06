@@ -10,16 +10,16 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.btn {
+  margin-top: 2rem;
+  font-size: 6rem;
+}
+
 .container {
   height: 60px;
   width: 700px;
   outline: 2px solid blue;
   display: flex;
-}
-
-.btn {
-  margin-top: 2rem;
-  font-size: 6rem;
 }
 
 .item {
