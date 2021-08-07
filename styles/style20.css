@@ -5,6 +5,10 @@ body {
   width: 100vw;
 }
 
+.wrapper {
+  position: relative;
+}
+
 h1 {
   font-size: 4rem;
   margin-bottom: 2rem;
@@ -12,6 +16,14 @@ h1 {
 
 .btn {
   margin-top: 2rem;
+  font-size: 4rem;
+  transition: font-size 0.5s;
+  position: absolute;
+  bottom: 30vh;
+  cursor: pointer;
+}
+
+.btn:hover {
   font-size: 6rem;
 }
 
