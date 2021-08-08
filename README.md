@@ -170,3 +170,11 @@ What I learned:
 What I learned:
 
 - You must use margin on the child text itself instead of padding on the parent as flexbox does not account for padding when used in this manner
+
+### Page 21: Random color change
+
+- Come up with random color values, displayed as a background color of the body element on 'click'
+
+What I learned:
+
+- Not much here, just an example for a friend
