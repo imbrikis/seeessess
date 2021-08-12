@@ -1,0 +1,38 @@
+@import 'main.css';
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+.files {
+  width: 800px;
+  height: 800px;
+  background: lightblue;
+  border: 2px solid black;
+  position: absolute;
+}
+
+.file2 {
+  top: 3rem;
+  left: 3rem;
+}
+
+.file3 {
+  top: 6rem;
+  left: 6rem;
+}
+
+.file4 {
+  top: 9rem;
+  left: 9rem;
+}
+
+.file5 {
+  top: 12rem;
+  left: 12rem;
+}

@@ -178,3 +178,7 @@ What I learned:
 What I learned:
 
 - Not much here, just an example for a friend
+
+### Page 22: Window Desktop-like Tiles
+
+- Create the functionality of operating system files where you can click on a file window to bring it into focus
