@@ -17,7 +17,7 @@ initFiles()
 
 const windowFocus = (e) => {
   if (+e.target.style.zIndex === 4) {
-    console.log("i won't do it")
+    console.log("You're already focused on that window")
     return
   }
 
@@ -28,7 +28,7 @@ const windowFocus = (e) => {
       windowPositions[x] = 4
     }
     if (+allFiles[x].style.zIndex > selectedWindowIndex) {
-      windowPositions[x] = windowPositions[x] - 1
+      windowPositions[x]--
     }
   }
 

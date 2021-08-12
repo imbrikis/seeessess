@@ -182,3 +182,11 @@ What I learned:
 ### Page 22: Window Desktop-like Tiles
 
 - Create the functionality of operating system files where you can click on a file window to bring it into focus
+
+What I learned:
+
+- I developed an algorithm to handle the reordering of the z-indexes for the windows 😁
+
+Further:
+
+- Make the windows draggable
