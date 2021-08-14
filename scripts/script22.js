@@ -40,3 +40,5 @@ file2.addEventListener('click', windowFocus)
 file3.addEventListener('click', windowFocus)
 file4.addEventListener('click', windowFocus)
 file5.addEventListener('click', windowFocus)
+
+file1.addEventListener('drag', () => console.log('hiee'))
