@@ -15,6 +15,13 @@ const initFiles = () => {
 }
 initFiles()
 
+const moveWindow = (e, file) => {
+  console.log(e)
+
+  file.style.top = e.clientY + 'px'
+  file.style.left = e.clientX + 'px'
+}
+
 const windowFocus = (e) => {
   if (+e.target.style.zIndex === 4) {
     console.log("You're already focused on that window")
@@ -41,4 +48,8 @@ file3.addEventListener('click', windowFocus)
 file4.addEventListener('click', windowFocus)
 file5.addEventListener('click', windowFocus)
 
-file1.addEventListener('drag', () => console.log('hiee'))
+file1.addEventListener('drag', (e) => moveWindow(e, file1))
+file2.addEventListener('drag', (e) => moveWindow(e, file2))
+file3.addEventListener('drag', (e) => moveWindow(e, file3))
+file4.addEventListener('drag', (e) => moveWindow(e, file4))
+file5.addEventListener('drag', (e) => moveWindow(e, file5))

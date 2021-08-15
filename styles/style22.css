@@ -17,6 +17,11 @@ h1 {
   position: absolute;
 }
 
+.file1 {
+  top: 0;
+  left: 0;
+}
+
 .file2 {
   top: 3rem;
   left: 3rem;
